@@ -1,0 +1,48 @@
+#include<iostream>
+#include<conio.h>
+#include<string>
+using namespace std;
+
+int main()
+{
+	string name;
+	double inc;
+	double tax;
+	cout << "Enter your name: ";
+	cin >> name;
+	cout << "\nEnter your annual income: ";
+	cin >> inc;
+
+	if (inc < 250000)
+	{
+		tax = 0.0;
+	}
+	else if (inc > 250000 && inc < 500000)
+	{
+		tax = (5 * inc) / 100;
+	}
+	else if (inc > 500000 && inc < 750000)
+	{
+		tax = 25000.0 + (10 * (inc - 500000) / 100);
+	}
+	else if (inc > 750000 && inc < 1000000)
+	{
+		tax = 25000.0 + 37500.0 + (15 * (inc - 750000));
+	}
+	else if (inc > 1000000 && inc < 1250000)
+	{
+		tax = 25000.0 + 37500.0 + 50000.0 + (20 * (inc - 1000000));
+	}
+	else if (inc > 1250000 && inc < 1500000)
+	{
+		tax = 25000.0 + 37500.0 + 50000.0 + 62500.0 + (25 * (inc - 1250000));
+	}
+	else if (inc > 1500000)
+	{
+		tax = 25000.0 + 37500.0 + 50000.0 + 62500.0 + 75000.0 + (30 * (inc - 1500000));
+	}
+
+	cout << "Name: " << name;
+	cout << "\nTax to be paid: " << tax;
+	return 0;
+}
