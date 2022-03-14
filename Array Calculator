@@ -1,0 +1,55 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+	int na;
+	int ch;
+	double m = 1;
+	double s = 0;
+	cout << "Enter total number of operands:";
+	cin >> na;
+	double num[na];
+	for (int i = 0; i < na; i++)
+	{
+		cout << "Enter number " << i + 1 << ":";
+		cin >> num[i];
+	}
+	cout << "Enter your choice:" << "\n 1 to Add all \n 2 to Substract all from first \n 3 to Multiply all \n Enter: ";
+	cin >> ch;
+	switch (ch)
+	{
+	case 1:
+		for (int j = 0; j < na; j++)
+		{
+			s = s + num[j];
+		}
+		cout << "Sum is: " << s;
+		break;
+	case 2:
+		s = num[0];
+		for (int j = 1; j < na; j++)
+		{
+			s = s - num[j];
+		}
+		cout << "Difference is: " << s;
+		break;
+	case 3:
+		for (int j = 0; j < na; j++)
+		{
+			m = m * num[j];
+		}
+		cout << "Product is: " << m;
+		break;
+	default:
+		cout << "Invalid Choice!";
+		break;
+
+
+	}
+	return 0;
+	
+	
+
+}
