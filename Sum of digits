@@ -16,5 +16,6 @@ int main()
 		num = num / 10;
 	}
 	cout << "The sum of digits is: " << s;
+	return 0;
 
 }
