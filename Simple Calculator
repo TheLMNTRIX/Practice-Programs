@@ -1,0 +1,41 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	double num1;
+	double num2;
+	double s;
+	int ch;
+	cout << "Enter the First number: ";
+	cin >> num1;
+	cout << "Enter the Second number: ";
+	cin >> num2;
+	cout << "Enter your choice:" << "\n 1 for Addition \n 2 for Substraction \n 3 for Multiplication \n 4 for Division \n Enter your choice: ";
+	cin >> ch;
+	switch (ch)
+	{
+	case 1:
+		s = num1 + num2;
+		cout << "The sum is:" << s;
+		break;
+	case 2:
+		s = num1 - num2;
+		cout << " The difference is:" << s;
+		break;
+	case 3:
+		s = num1 * num2;
+		cout << "The product is:" << s;
+		break;
+	case 4:
+		s = num1 / num2;
+		cout << "The quotient is:" << s;
+		break;
+	default:
+		cout << "Invalid Choice:";
+
+
+	}
+	return 0;
+
+}
