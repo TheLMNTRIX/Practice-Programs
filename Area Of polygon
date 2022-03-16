@@ -40,7 +40,7 @@ int main()
 	{
 
   
-		cout << "\nPick one: \n 1.For Circle \n 2.For Square \n 3.For Rectangle \n Enter your choice: ";
+		cout << "\nPick one: \n 1.For Circle \n 2.For Square \n 3.For Rectangle \n4.To Exit \n Enter your choice: ";
 		cin >> ch;
 		switch (ch)
 		{
